@@ -17,6 +17,8 @@ struct FiveShapesAppApp: App {
             ContentView()
                 .environment(appModel)
         }
+        .windowStyle(.volumetric)
+        .defaultSize(width: 0.6, height: 0.4, depth: 0.6, in: .meters)
 
         ImmersiveSpace(id: appModel.immersiveSpaceID) {
             ImmersiveView()
